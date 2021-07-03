@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AINE Assignment</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+<div class="col-lg-1">
+        <nav>
+        <ul class="menu">
+            <li class="menuitem "> <a href="#">
+                    <div class="outer_circle">
+                        <div class="half_circle">
+                            <div class="trl"></div>
+                            <div class="trl1"></div>
+                            <div class="trl2"></div>
+                        </div>  </div> </a>
+            </li>
+            <hr>
+            <li class=" active"><a href="#Students."><i class="fas fa-user"></i> <p>Students</p></a></li>
+            <li > <a href="#Lesson_Plan."><i class="fas fa-book"></i> <p>Lesson Plan</p></a></li>
+            <li > <a href="#Settings."><i class="fas fa-cog"></i>  <p>Settings</p></a> </li>
+        </ul>
+    </nav>
+</div>
+<div class="col-lg-10">
+    <div id="container_box">
+        <div class="div">
+            <!-- <section id="Students">
+            <h1> Students</h1>
+        </section> -->
+
+            <section id="Lesson_Plan">
+                <div>
+                    <p style="font-weight: bold;color: gray;margin-top: 45px;">
+                        <i style="font-size:18px;" class="fas fa-caret-left"></i>
+                        <span style="margin: right 10px;">Videos</span>
+                    </p>
+
+                </div>
+                <div class="content">
+                    <input type="text" placeholder="Insert URL here">
+                    <p style="text-align: center;font-weight: bold;margin: 25px 0;">or</p>
+
+
+                    <div class="upload">
+                        <h6>Upload</h6>
+                    </div>
+                </div>
+            </section>
+
+            <!-- <section id="Settings">
+            <h1> Settings</h1>
+        </section> -->
+        </div>
+    </div>
+</div>
+    </div>
+    </div>
+    <!-- <nav>
+        <ul class="menu">
+            <li class="menuitem "> <a href="#">
+                    <div class="outer_circle">
+                        <div class="half_circle">
+                            <div class="trl"></div>
+                            <div class="trl1"></div>
+                            <div class="trl2"></div>
+                        </div>  </div> </a>
+            </li>
+            <hr>
+            <li class=" active"><a href="#Students."><i class="fas fa-user"></i> <p>Students</p></a></li>
+            <li > <a href="#Lesson_Plan."><i class="fas fa-book"></i> <p>Lesson Plan</p></a></li>
+            <li > <a href="#Settings."><i class="fas fa-cog"></i>  <p>Settings</p></a> </li>
+        </ul>
+    </nav> -->
+
+
+
+    <!-- <div id="container_box">
+        <div class="div">
+            <section id="Students">
+            <h1> Students</h1>
+        </section>
+
+            <section id="Lesson_Plan">
+                <div>
+                    <p style="font-weight: bold;color: gray;margin-top: 45px;">
+                        <i style="font-size:18px;" class="fas fa-caret-left"></i>
+                        <span style="margin: right 10px;">Videos</span>
+                    </p>
+
+                </div>
+                <div class="content">
+                    <input type="text" placeholder="Insert URL here">
+                    <p style="text-align: center;font-weight: bold;margin: 25px 0;">or</p>
+
+
+                    <div class="upload">
+                        <h6>Upload</h6>
+                    </div>
+                </div>
+            </section>
+
+            <section id="Settings">
+            <h1> Settings</h1>
+        </section>
+        </div>
+    </div> -->
+
+    <script>
+      var ul = document.querySelector("ul");
+   var li = document.querySelectorAll('li');
+   li.forEach(elemenet=>{
+    elemenet.addEventListener('click', function(){
+       ul.querySelector('.active') .classList.remove('active');
+       elemenet.classList.add('active');
+    })
+   })
+
+    </script>
+</body>
+
+</html>
